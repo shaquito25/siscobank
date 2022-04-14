@@ -1,6 +1,6 @@
 <h1>Productos</h1>
 
-<% @products.each do |product| %>
+<% @products.each do |product| %> <!-- Recorre todos los productos -->
     <%= link_to product_path(product), class: 'product' do  %>
         <h2><%= product.title %> </h2>
         <span> <%= product.price %>$</span>
